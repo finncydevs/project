@@ -18,6 +18,9 @@ export default {
       screens: {
         "2xl": "1320px",
       },
+      fontSize: {
+        "10xl": "50px",
+      },
       gridTemplateColumns: {
         "70/30": "20% 28%",
       },
