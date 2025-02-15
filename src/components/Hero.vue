@@ -1,39 +1,33 @@
 <script setup></script>
 
 <template>
-  <section id="home" class="h-screen pt-10 bg-white">
+  <section id="home" class="pt-10 md:pt-6 pb-10 bg-bg">
     <div class="container h-full flex items-center">
       <div class="flex flex-wrap w-full">
-        <div class="w-full self-center px-4 lg:w-1/2">
-          <h1 id="type" class="text-7xl lg:text-8xl font-bold text-black mb-6">
-            Wujudkan semuanya dengan kita.
+        <div class="w-full self-center px-4 lg:w-1/2" data-aos="zoom-in" data-aos-duration="1300">
+          <h1
+            id="type"
+            class="text-6xl lg:text-7xl font-bold text-primary mb-6"
+          >
+            Wujudkan semuanya dengan kami.
           </h1>
 
           <p
-            class="mb-10 font-medium leading-relaxed text-lg lg:text-xl text-black"
+            class="mb-8 font-medium leading-relaxed text-base lg:text-lg text-secondary"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
             accusantium soluta quae voluptas officia labore recusandae nemo
             officiis nulla quos sed, consectetur quidem asperiores commodi eum
             neque ea unde iste!
-            <b class="font-bold text-primary text-lg">Learn!</b>
+            <b class="font-bold text-primary text-ms">Learn!</b>
           </p>
 
           <button
             type="button"
-            class="text-white bg-black font-bold rounded-lg text-lg px-7 py-4 text-center mr-2 mb-2"
+            class="text-white bg-dark font-bold rounded-lg text-md px-3 py-3 text-center mr-2 mb-2"
           >
-            Contact me
+            Contact Us
           </button>
-        </div>
-
-        <div class="w-full self-center pl-5 lg:w-1/2">
-          <img
-            src="https://i.pinimg.com/736x/ad/b4/0a/adb40a610c898a70fb990dc5e224f397.jpg"
-            alt="sakana"
-            id="sakan"
-            class="shadow-2xl rounded-lg object-cover w-full lg:justify-center h-auto max-h-[500px]"
-          />
         </div>
       </div>
     </div>

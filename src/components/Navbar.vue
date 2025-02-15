@@ -20,15 +20,15 @@ onMounted(() => {
 </script>
 // Navbar.vue
 <template>
-  <nav class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
-    <div class="text-xl font-bold text-black">LOGO/nama</div>
+  <nav class="bg-bg shadow-md py-4 px-6 flex justify-between items-center">
+    <div class="text-2xl font-bold text-primary">Fische</div>
     <div class="hidden md:flex space-x-6">
-      <a href="#" class="text-black text-xl font-bold">Project</a>
-      <a href="#" class="text-black text-xl font-bold">Blog</a>
-      <a href="#" class="text-black text-xl font-bold">Karir</a>
+      <a class="text-primary text-lg font-bold">Project</a>
+      <a class="text-primary text-lg font-bold">Blog</a>
+      <a class="text-primary text-lg font-bold">Karir</a>
     </div>
     <button
-      class="hidden md:block bg-black text-white px-4 py-2 rounded-lg text-sm"
+      class="hidden md:block bg-primary text-white px-5 py-4 rounded-lg text-sm"
     >
       Get Started
     </button>

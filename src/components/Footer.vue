@@ -3,13 +3,13 @@ import { scrollInto } from "@/utils/script";
 </script>
 
 <template>
-  <footer class="bg-slate-900 pt-24 pb-12">
-    <div class="container flex justify-center items-center">
+  <footer class="bg-slate-900 pt-24 pb-8">
+    <div class="container flex justify-center items-center" >
       <div class="flex flex-wrap">
         <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-          <h2 class="font-bold text-4xl mb-5 text-white">Finn/Jindan</h2>
+          <h2 class="font-bold text-4xl mb-5 text-white">Fische</h2>
           <h3 class="font-bold text-4xl mb-5">Hubungi kami</h3>
-          <p>finnnxptrix@gmail.com</p>
+          <p>fische@gmail.com</p>
           <p>Jl. Peusar</p>
           <p>Cianjur</p>
         </div>
@@ -20,12 +20,12 @@ import { scrollInto } from "@/utils/script";
           <ul class="text-slate-300">
             <li>
               <a href="" class="inline-block text-base hover:text-primary mb-3"
-                >Weather</a
+                >Kelompok</a
               >
             </li>
             <li>
               <a href="" class="inline-block text-base hover:text-primary mb-3"
-                >Weather app</a
+                >Kerja Sama</a
               >
             </li>
             <li>
@@ -54,9 +54,9 @@ import { scrollInto } from "@/utils/script";
             </li>
             <li>
               <a
-                @click="scrollInto('weather')"
+                @click="scrollInto('about')"
                 class="inline-block text-base hover:text-primary mb-3"
-                >Weather</a
+                >Project</a
               >
             </li>
           </ul>

@@ -11,9 +11,10 @@ export default {
         sans: ["Poppins", "sans-serif"],
       },
       colors: {
-        primary: "#e0f2fe",
-        dark: "#e0f2fe",
-        secondary: "#e0f2fe",
+        primary: "#243642",
+        dark: "#363062",
+        secondary: "#629584",
+        bg: "#E2F1E7",
       },
       screens: {
         "2xl": "1320px",
@@ -35,5 +36,5 @@ export default {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
