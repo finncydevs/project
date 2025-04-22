@@ -47,58 +47,63 @@ const details = ref([
   },
 ]);
 </script>
-
 <template>
-  <section class="bg-bg py-8 px-4">
-    <div
-      class="grid grid-cols-1 lg:m-5 lg:mx-[100px] md:grid-cols-2 gap-6"
-     
-    >
+  <section id="Anggota" class="bg-bg py-12 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div
-        class="shadow-lg flex flex-col p-4 rounded-lg bg-bg  border border-slate-200"
         v-for="detail in details"
         :key="detail.id"
+        class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col"
+        data-aos="fade-up"
+        data-aos-duration="1200"
       >
-        <div class="flex items-center gap-4 text-dark py-5">
+        <!-- Header -->
+        <div class="flex items-center p-6 gap-4 border-b border-slate-200">
           <img
             :src="detail.image"
-            alt="Tania Andrew"
-            class="h-[58px] w-[58px] rounded-full object-cover"
+            :alt="detail.name"
+            class="h-16 w-16 rounded-full object-cover"
           />
-          <div class="flex w-full flex-col">
-            <h5 class="text-xl font-semibold text-dark">
-              {{ detail.name }}
-            </h5>
-            <p class="text-xs uppercase font-bold text-secondary">
-              {{ detail.role }}
-            </p>
+          <div class="flex-1">
+            <h5 class="text-xl font-extrabold text-dark">{{ detail.name }}</h5>
+            <p class="text-xs uppercase font-semibold text-secondary">{{ detail.role }}</p>
           </div>
-          <div class="flex flex-row gap-4 text-xl">
-            <a :href="detail.whatsapp" target="_blank">
+          <div class="flex space-x-3 text-2xl text-secondary">
+            <a :href="detail.whatsapp" target="_blank" class="hover:text-primary transition">
               <i class="pi pi-whatsapp"></i>
             </a>
-            <a :href="detail.instagram" target="_blank">
+            <a :href="detail.instagram" target="_blank" class="hover:text-primary transition">
               <i class="pi pi-instagram"></i>
             </a>
           </div>
         </div>
-        <p class="text-base text-secondary font-light leading-normal">
-          {{ detail.description }}
-        </p>
-        <button
-          class="py-3 bg-primary text-bg font-bold w-80 justify-center mt-4 rounded-lg"
-        >
-          Lihat portofolio
-        </button>
+        <!-- Body -->
+        <div class="p-6 flex-1 flex flex-col">
+          <p class="text-gray-700 flex-1 leading-relaxed">
+            {{ detail.description }}
+          </p>
+          <button
+            class="mt-6 self-center w-full py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg transition-transform transform hover:scale-105"
+          >
+            Lihat Portofolio
+          </button>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
+<script>
+export default {
+  props: {
+    details: {
+      type: Array,
+      required: true,
+    },
+  },
+};
+</script>
+
 <style scoped>
-.card {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
+/* All styling handled by Tailwind utilities */
 </style>

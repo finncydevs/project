@@ -10,19 +10,19 @@ const projects = [
   {
     img: photo1,
     alt: "Photo editing",
-    title: "Photo editing photoshop",
-    description: " Kadang saya juga mendesain logo atau desain untuk kaos.",
+    title: "Photo Editing Photoshop",
+    description: "Kadang saya juga mendesain logo atau desain untuk kaos.",
   },
   {
     img: photo2,
-    alt: "Photo editing stlyed",
-    title: "Photoshop stlyed",
+    alt: "Photo editing styled",
+    title: "Photoshop Styled",
     description: "Editing style terfavorit saya",
   },
   {
     img: photo3,
-    alt: "Potografi",
-    title: "Mencoba potografi",
+    alt: "Fotografi",
+    title: "Mencoba Fotografi",
     description: "Saya suka memfoto pemandangan",
   },
   {
@@ -36,45 +36,38 @@ const projects = [
 </script>
 
 <template>
-  <section id="project" class="pt-24 pb-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <div class="w-full text-center mb-12">
-        <h4 class="text-lg font-semibold text-indigo-500">Portofolio</h4>
-        <h2 class="text-3xl font-bold text-gray-900 mt-2">Project Terbaru</h2>
-        <p class="text-md text-gray-500 mt-3">
-          Beberapa hal yang saya tertarik
-        </p>
+  <section id="Project" class="bg-bg py-12 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h4 class="text-lg font-semibold text-primary">Portofolio</h4>
+        <h2 class="text-3xl lg:text-4xl font-bold text-dark mt-2">Project Terbaru</h2>
+        <p class="text-md text-secondary mt-3">Beberapa hal yang saya tertarik</p>
       </div>
 
-      <div class="space-y-8">
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
           v-for="(project, index) in projects"
           :key="index"
-          class="flex flex-col md:flex-row items-center gap-8"
+          class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition hover:scale-105 hover:shadow-2xl"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <!-- Image -->
-          <div class="w-full  flex justify-center">
-            <div class="relative border-2 rounded-xl p-3 shadow-lg">
-              <img
-                :src="project.img"
-                :alt="project.alt"
-                class="rounded-lg shadow-md"
-              />
-            </div>
-          </div>
-
-          <!-- Text -->
-          <div class="w-full md:w-1/2">
+          <div class="relative">
+            <img
+              :src="project.img"
+              :alt="project.alt"
+              class="w-full h-48 object-cover"
+            />
             <span
-              class="bg-black text-white text-sm font-semibold px-3 py-1 rounded-full"
+              class="absolute top-4 left-4 bg-gradient-to-r from-primary to-secondary text-white text-xs uppercase font-semibold px-2 py-1 rounded-full"
               >Project</span
             >
-            <h3 class="mt-4 text-2xl font-bold text-gray-900">
-              {{ project.title }}
-            </h3>
-            <p class="text-gray-600 mt-3">{{ project.description }}</p>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-xl font-extrabold text-dark">{{ project.title }}</h3>
+            <p class="text-gray-700 mt-2 leading-relaxed">{{ project.description }}</p>
           </div>
         </div>
       </div>
@@ -83,7 +76,4 @@ const projects = [
 </template>
 
 <style scoped>
-.container {
-  max-width: 1100px;
-}
 </style>

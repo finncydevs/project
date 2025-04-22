@@ -12,10 +12,10 @@ import Lokasi from "@/components/Location.vue";
 <template>
   <Navbar />
   <Hero />
-  <!-- <Project /> -->
-  <Tools />
+  <!-- <Tools /> -->
   <!-- <Marque /> -->
   <Kelompok />
+  <Project />
   <Anggota />
   <Lokasi />
   <Footer />

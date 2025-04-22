@@ -4,11 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* or in your `app.css` file */
 body {
   font-family: "Inter", sans-serif;
 }
-
+/* 
 .navbar-fixed {
   z-index: 9999;
   position: fixed;
@@ -43,7 +42,7 @@ body {
 
 .hamburger-active > span:nth-child(3) {
   transform: rotate(-45deg);
-}
+} */
 
 .games {
   @apply hover:scale-125 duration-300 ease-in-out;

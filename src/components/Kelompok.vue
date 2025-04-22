@@ -1,54 +1,82 @@
 <template>
-  <div class="flex flex-col shadow-lg items-center px-8 py-4 bg-bg">
-    <div class="flex flex-wrap items-center justify-center max-w-5xl mb-10">
-      <img
-        class="w-1/2 shadow-lg rounded-lg"
-        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eaboutus1.svg"
-      />
-      <div class="w-1/2 px-6">
-        <p class="text-4xl font-bold text-primary">Our Mission</p>
-        <p class="text-2xl font-semibold text-secondary">
-          Mewujudkan Bangsa Yang Jujur
-        </p>
-        <p class="text-primary mt-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
-          pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo in
-          ullamcorper quis vestibulum ligula elementum ut.
-        </p>
-        <button
-          class="mt-4 px-6 py-2 bg-primary text-bg rounded-lg hover:bg-dark transatition-300 ease-in-out transition-all"
-        >
-          Explore
-        </button>
+  <section id="Project" class="bg-bg py-16 px-4">
+    <div class="max-w-7xl mx-auto space-y-16">
+      <!-- Our Mission Card -->
+      <div
+        class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row items-center"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+      >
+        <!-- Image -->
+        <div class="w-full md:w-1/2">
+          <img
+            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eaboutus1.svg"
+            alt="Our Mission Illustration"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <!-- Text -->
+        <div class="w-full md:w-1/2 p-8 md:p-12">
+          <h3 class="text-3xl lg:text-4xl font-extrabold text-primary mb-4">
+            Our Mission
+          </h3>
+          <p class="text-xl font-semibold text-secondary mb-4">
+            Mewujudkan Bangsa Yang Jujur
+          </p>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
+            pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo in
+            ullamcorper quis vestibulum ligula elementum ut.
+          </p>
+          <button
+            class="inline-block px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg transition-transform transform hover:scale-105"
+          >
+            Explore
+          </button>
+        </div>
       </div>
-    </div>
 
-    <div
-      class="flex flex-wrap items-center justify-center max-w-5xl flex-row-reverse"
-    >
-      <img
-        class="w-1/2 shadow-lg rounded-lg"
-        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/xpraup2.svg"
-      />
-      
-      <div class="w-1/2 px-6">
-        <p class="text-2xl font-bold text-primary">Our Vision</p>
-        <p class="text-xl font-semibold text-secondary">Memaju Kedepan</p>
-        <p class="text-primary mt-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
-          pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo in
-          ullamcorper quis vestibulum ligula elementum ut.
-        </p>
-        <button
-          class="mt-4 px-6 py-2 bg-primary text-bg rounded-lg hover:bg-dark transatition-300 ease-in-out transition-all"
-        >
-          Explore
-        </button>
+      <!-- Our Vision Card -->
+      <div
+        class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row-reverse items-center"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+      >
+        <!-- Image -->
+        <div class="w-full md:w-1/2">
+          <img
+            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/xpraup2.svg"
+            alt="Our Vision Illustration"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <!-- Text -->
+        <div class="w-full md:w-1/2 p-8 md:p-12">
+          <h3 class="text-3xl lg:text-4xl font-extrabold text-primary mb-4">
+            Our Vision
+          </h3>
+          <p class="text-xl font-semibold text-secondary mb-4">
+            Memaju Kedepan
+          </p>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
+            pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo in
+            ullamcorper quis vestibulum ligula elementum ut.
+          </p>
+          <button
+            class="inline-block px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg transition-transform transform hover:scale-105"
+          >
+            Explore
+          </button>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
 export default {};
 </script>
+
+<style scoped>
+</style>

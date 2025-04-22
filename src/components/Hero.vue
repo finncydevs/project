@@ -1,43 +1,63 @@
 <script setup></script>
 
 <template>
-  <section id="home" class="pt-10 md:pt-6 pb-10 bg-bg">
-    <div class="container h-full flex items-center">
-      <div class="flex flex-wrap w-full">
-        <div class="w-full self-center px-4 lg:w-1/2" data-aos="zoom-in" data-aos-duration="1300">
-          <h1
-            id="type"
-            class="text-6xl lg:text-7xl font-bold text-primary mb-6"
-          >
-            Wujudkan semuanya dengan kami.
-          </h1>
+  <section
+    id="home"
+    class="pt-10 pb-10 bg-bg"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col-reverse lg:flex-row items-center">
+      <!-- Text Column -->
+      <div
+        class="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6"
+        data-aos="zoom-in"
+        data-aos-duration="1300"
+      >
+        <h1
+          id="type"
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary"
+        >
+          Wujudkan semuanya dengan kami.
+        </h1>
 
-          <p
-            class="mb-8 font-medium leading-relaxed text-base lg:text-lg text-secondary"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-            accusantium soluta quae voluptas officia labore recusandae nemo
-            officiis nulla quos sed, consectetur quidem asperiores commodi eum
-            neque ea unde iste!
-            <b class="font-bold text-primary text-ms">Learn!</b>
-          </p>
+        <p class="max-w-lg text-secondary font-medium leading-relaxed text-sm sm:text-base lg:text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+          accusantium soluta quae voluptas officia labore recusandae nemo
+          officiis nulla quos sed, consectetur quidem asperiores commodi eum
+          neque ea unde iste!
+          <b class="font-bold text-primary">Learn!</b>
+        </p>
 
-          <button
-            type="button"
-            class="text-white bg-dark font-bold rounded-lg text-md px-3 py-3 text-center mr-2 mb-2"
-          >
-            Contact Us
-          </button>
-        </div>
+        <button
+          type="button"
+          class="inline-block px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg transition-transform transform hover:scale-105"
+        >
+          Contact Us
+        </button>
+      </div>
+
+      <!-- Image Column -->
+      <div
+        class="w-full lg:w-1/2 mb-8 lg:mb-0 flex justify-center lg:justify-end"
+        data-aos="fade-left"
+        data-aos-duration="1300"
+      >
+        <img
+          class="w-full max-w-xxl object-cover rounded-lg"
+          src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eaboutus1.svg"
+          alt="Illustrasi"
+        />
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
-#sakana {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.drop-shadow-xxl {
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 </style>
