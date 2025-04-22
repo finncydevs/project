@@ -42,7 +42,6 @@
         data-aos="fade-up"
         data-aos-duration="1200"
       >
-        <!-- Image -->
         <div class="w-full md:w-1/2">
           <img
             src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/xpraup2.svg"

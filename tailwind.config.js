@@ -36,5 +36,5 @@ export default {
   variants: {
     extend: {},
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [require("daisyui")],
 };

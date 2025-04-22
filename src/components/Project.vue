@@ -39,9 +39,8 @@ const projects = [
   <section id="Project" class="bg-bg py-12 px-4">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-12">
-        <h4 class="text-lg font-semibold text-primary">Portofolio</h4>
-        <h2 class="text-3xl lg:text-4xl font-bold text-dark mt-2">Project Terbaru</h2>
-        <p class="text-md text-secondary mt-3">Beberapa hal yang saya tertarik</p>
+        <h2 class="text-3xl lg:text-4xl font-bold text-dark mt-2">Fasilitas</h2>
+        <p class="text-md text-secondary mt-3">Fasilitas yang ada di X</p>
       </div>
 
       <!-- Projects Grid -->
@@ -59,10 +58,7 @@ const projects = [
               :alt="project.alt"
               class="w-full h-48 object-cover"
             />
-            <span
-              class="absolute top-4 left-4 bg-gradient-to-r from-primary to-secondary text-white text-xs uppercase font-semibold px-2 py-1 rounded-full"
-              >Project</span
-            >
+           
           </div>
 
           <div class="p-6">
