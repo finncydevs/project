@@ -30,11 +30,14 @@ onMounted(() => {
           >Project</a
         >
         <a
-        v-scroll-to="'#Blog'"
-        class="text-primary text-lg font-bold cursor-pointer">Blog</a>
+        v-scroll-to="'#Misi'"
+        class="text-primary text-lg font-bold cursor-pointer hover:text-xl">Visi Misi</a>
+        <a
+        v-scroll-to="'#Fasilitas'"
+        class="text-primary text-lg font-bold cursor-pointer hover:text-xl">Fasilitas</a>
         <a
         v-scroll-to="'#Anggota'"
-        class="text-primary text-lg font-bold cursor-pointer">Anggota</a>
+        class="text-primary text-lg font-bold cursor-pointer hover:text-xl">Anggota</a>
       </div>
       <button
         class=" md:block inline-block px-3 py-2 bg-gradient-to-r text-base from-primary to-secondary text-white font-semibold rounded-lg transition-transform transform hover:scale-105"

@@ -27,12 +27,6 @@
           <b class="font-bold text-primary">Learn!</b>
         </p>
 
-        <button
-          type="button"
-          class="inline-block px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg transition-transform transform hover:scale-105"
-        >
-          Contact Us
-        </button>
       </div>
 
       <!-- Image Column -->

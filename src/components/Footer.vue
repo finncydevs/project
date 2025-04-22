@@ -4,92 +4,90 @@ import { scrollInto } from "@/utils/script";
 
 <template>
   <footer class="bg-slate-900 pt-24 pb-8">
-    <div class="container flex justify-center items-center" >
-      <div class="flex flex-wrap">
+    <div class="container flex justify-center items-center">
+      <div class="flex flex-wrap w-full">
+        <!-- Kontak -->
         <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
           <h2 class="font-bold text-4xl mb-5 text-white">Fische</h2>
-          <h3 class="font-bold text-4xl mb-5">Hubungi kami</h3>
+          <h3 class="font-bold text-2xl mb-5">Hubungi kami</h3>
           <p>fische@gmail.com</p>
           <p>Jl. Peusar</p>
           <p>Cianjur</p>
         </div>
+
+        <!-- Kategori Tulisan -->
         <div class="w-full px-4 mb-12 md:w-1/3">
           <h3 class="font-semibold text-xl text-white mb-5">
             Kategori Tulisan
           </h3>
           <ul class="text-slate-300">
             <li>
-              <a href="" class="inline-block text-base hover:text-primary mb-3"
+              <a href="#" class="inline-block text-base hover:text-primary mb-3"
                 >Kelompok</a
               >
             </li>
             <li>
-              <a href="" class="inline-block text-base hover:text-primary mb-3"
+              <a href="#" class="inline-block text-base hover:text-primary mb-3"
                 >Kerja Sama</a
               >
             </li>
             <li>
-              <a href="" class="inline-block text-base hover:text-primary mb-3"
+              <a href="#" class="inline-block text-base hover:text-primary mb-3"
                 >Learning</a
               >
             </li>
           </ul>
         </div>
+
+        <!-- Kategori Tautan -->
         <div class="w-full px-4 mb-12 md:w-1/3">
           <h3 class="font-semibold text-xl text-white mb-5">Kategori Tautan</h3>
           <ul class="text-slate-300">
             <li>
               <a
-                @click="scrollInto('home')"
-                class="inline-block text-base hover:text-primary mb-3"
+              v-scroll-to="'#home'"
+                class="inline-block text-base hover:text-primary mb-3 cursor-pointer"
                 >Beranda</a
               >
             </li>
             <li>
               <a
-                @click="scrollInto('contact')"
-                class="inline-block text-base hover:text-primary mb-3"
-                >Contact</a
+                v-scroll-to="'#Misi'"
+                class="inline-block text-base hover:text-primary mb-3 cursor-pointer"
+                >Visi Misi</a
               >
             </li>
             <li>
               <a
-                @click="scrollInto('about')"
-                class="inline-block text-base hover:text-primary mb-3"
-                >Project</a
+                v-scroll-to="'#Fasilitas'"
+                class="inline-block text-base hover:text-primary mb-3 cursor-pointer"
+                >Fasilitas</a
+              >
+              <a
+                v-scroll-to="'#Fasilitas'"
+                class="inline-block text-base hover:text-primary mb-3 cursor-pointer"
+                >Anggota</a
               >
             </li>
           </ul>
         </div>
-        <div class="class w-full pt-10 border-t border-slate-700">
-          <div class="flex items-center justify-center mb-5">
+
+        <div class="w-full pt-10 border-t border-slate-700">
+          <div class="flex items-center justify-center gap-3 mb-5 flex-wrap">
             <a
               href="#"
-              class="group w-10 h-10 mr-3 rounded-full flex justify-center items-center border-2 border-sky-400 hover:border-sky-600 hover:bg-sky-600"
+              class="group w-10 h-10 rounded-full flex justify-center items-center border-2 border-sky-400 hover:border-sky-600 hover:bg-sky-600"
             >
               <i
                 class="pi pi-youtube text-xl group-hover:text-white text-sky-300"
               ></i>
             </a>
-            <a
-              href=""
-              class="group w-10 h-10 mr-3 rounded-full flex justify-center items-center border-2 border-sky-400 hover:border-sky-600 hover:bg-sky-600"
-            >
-              <i
-                class="pi pi-discord text-xl group-hover:text-white text-sky-300"
-              ></i>
-            </a>
-            <a
-              href="#"
-              class="group w-10 h-10 mr-3 rounded-full flex justify-center items-center border-2 border-sky-400 hover:border-sky-600 hover:bg-sky-600"
-            >
-              <i
-                class="pi pi-twitter text-xl group-hover:text-white text-sky-300"
-              ></i>
-            </a>
+           
+           
             <a
               href="https://www.facebook.com/profile.php?id=100071960914104"
-              class="group w-10 h-10 mr-3 rounded-full flex justify-center items-center border-2 border-sky-400 hover:border-sky-600 hover:bg-sky-600"
+              target="_blank"
+              class="group w-10 h-10 rounded-full flex justify-center items-center border-2 border-sky-400 hover:border-sky-600 hover:bg-sky-600"
             >
               <i
                 class="pi pi-facebook text-2xl group-hover:text-white text-sky-300"
@@ -97,7 +95,8 @@ import { scrollInto } from "@/utils/script";
             </a>
             <a
               href="https://www.instagram.com/enopy.finn/"
-              class="group w-10 h-10 mr-3 rounded-full flex justify-center items-center border-2 border-sky-400 hover:border-sky-600 hover:bg-sky-600"
+              target="_blank"
+              class="group w-10 h-10 rounded-full flex justify-center items-center border-2 border-sky-400 hover:border-sky-600 hover:bg-sky-600"
             >
               <i
                 class="pi pi-instagram text-xl group-hover:text-white text-sky-300"
@@ -106,7 +105,7 @@ import { scrollInto } from "@/utils/script";
           </div>
 
           <p class="font-medium text-sm text-sky-200 text-center">
-            Dibuat dengan <span class="text-ping-500">❤️</span> oleh
+            Dibuat dengan <span class="text-pink-500">❤️</span> oleh
             <a
               href="http://instagram.com/enopy.finn"
               class="text-primary"

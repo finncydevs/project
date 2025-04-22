@@ -36,14 +36,13 @@ const projects = [
 </script>
 
 <template>
-  <section id="Project" class="bg-bg py-12 px-4">
+  <section id="Fasilitas" class="bg-bg py-12 px-4">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-12">
         <h2 class="text-3xl lg:text-4xl font-bold text-dark mt-2">Fasilitas</h2>
         <p class="text-md text-secondary mt-3">Fasilitas yang ada di X</p>
       </div>
 
-      <!-- Projects Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
           v-for="(project, index) in projects"

@@ -1,5 +1,5 @@
 <template>
-  <section id="Project" class="bg-bg py-16 px-4">
+  <section id="Misi" class="bg-bg py-16 px-4">
     <div class="max-w-7xl mx-auto space-y-16">
       <!-- Our Mission Card -->
       <div
